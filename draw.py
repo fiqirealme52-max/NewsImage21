@@ -715,7 +715,7 @@ ALSO = [
     ("31", "ANC fights to keep control of key South African cities.", "BBC"),
     ("32", "French police sentenced over Zecler beating.", "BBC"),
     ("33", "Depardieu investigated over sex allegations.", "BBC"),
-    ("34", "Fined $811m for conning detained migrants.", "BBC"),
+    ("34", "Libre by Nexus fined $811m for conning detained migrants.", "BBC"),
     ("35", "Pochettino's first Man Utd test is Sunday.", "Reuters"),
     ("36", "Padikkal 80, Gill 50+ as India pass 300.", "Sportskeeda"),
     ("37", "Serbia elects Cupic as parliament speaker.", "Politika"),
