@@ -486,7 +486,7 @@ MEDIUM = [
      "A youth strike spreads across 25 countries over costs, arms and climate.",
      ic_crowd, (225, 180, 140), "Reuters"),
     ("10", "RAHUL'S SENA TON",
-     "KL Rahul hits 100 off 207 balls \u2014 first Indian opener with SENA tons.",
+     "KL Rahul \u2014 first Indian opener with Test centuries in all four SENA nations.",
      ic_cricket, (140, 190, 140), "Reuters"),
     ("11", "MAMDANI: RIKERS SHUT BY 2032",
      "New York's mayor plans to close Rikers Island by 2032, five years late.",
