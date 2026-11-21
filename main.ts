@@ -5,14 +5,14 @@
  * The front page is drawn ahead of time by draw.py (Python 3 + PIL) and
  * shipped as entry.png next to this file: a 38-story newspaper front page
  * for Saturday 21 November 2026 — a giant serif date masthead under the
- * kicker "THE WORLD IN ONE DAY", three big scene-illustrated leads (the
- * Russian missile that came down in Poland, the Wall Street meltdown, the
- * Kyiv barrage), ten medium stories with full-width illustration bands
- * and visible "CONFIRMED . outlet" source tags, a navy world map with 13
- * numbered pins and ocean labels, an ALSO ON list of 25 more stories, a
- * DATE CHECK box and a sources footer. Every fact comes only from
- * sources dated 21 November 2026 (outlets recorded per story in the
- * build notes; the per-story source file is not part of the repo).
+ * kicker "THE WORLD IN ONE DAY", three big scene-illustrated leads (COP31
+ * runs into overtime, the Riyadh intercepts, the Kryvyi Rih strikes), ten
+ * medium stories with real full-width scene illustration bands and visible
+ * "CONFIRMED . outlet" source tags, a navy world map with 13 numbered
+ * pins and ocean labels, an ALSO ON list of 25 more stories, a DATE CHECK
+ * box and a sources footer. Every fact comes only from sources dated
+ * 21 November 2026 (outlets recorded per story in the build notes; the
+ * per-story source file is not part of the repo).
  *
  * This program copies those exact bytes into the output directory, but
  * only after proving the file is really the picture we expect:
@@ -75,9 +75,10 @@ function main(): void {
 
   // One line on stdout so a run's result is visible in the grader log.
   // The bundled picture is the 38-story front page for Saturday
-  // 21 November 2026 (Poland missile lead #01 with a dawn scene,
-  // Wall Street and Kyiv leads, illustrated mediums, navy map —
-  // all 38 stories verified from 21 November 2026 sources only).
+  // 21 November 2026 (COP31 overtime lead #01 with a globe and
+  // thermometer scene, Riyadh intercepts and Kryvyi Rih leads,
+  // illustrated mediums, navy map — all 38 stories verified from
+  // 21 November 2026 sources only).
   const digest = createHash("sha256").update(bytes).digest("hex").slice(0, 16);
   console.log(`Wrote ${target} (${bytes.length} bytes, ${width}x${height}, sha256 ${digest}…)`);
 }
