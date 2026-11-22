@@ -2,15 +2,15 @@
  * NewsImage21 — entry program for the make.fun news-image-20261121
  * competition ("Sum up 21 November's world news in one image").
  *
- * The front page is drawn ahead of time by draw.py (Python 3 + PIL) and
- * shipped as entry.png next to this file: a 38-story newspaper front page
+ * The front page is drawn ahead of time by draw_r3.py (Python 3 + PIL) and
+ * shipped as entry.png next to this file: a 35-story newspaper front page
  * for Saturday 21 November 2026 — a giant serif date masthead under the
- * kicker "THE WORLD IN ONE DAY", three big scene-illustrated leads (COP31
- * runs into overtime, the Riyadh intercepts, the Kryvyi Rih strikes), ten
- * medium stories with real full-width scene illustration bands and visible
- * "CONFIRMED . outlet" source tags, a navy world map with 13 numbered
- * pins and ocean labels, an ALSO ON list of 25 more stories, a DATE CHECK
- * box and a sources footer. Every fact comes only from sources dated
+ * kicker "THE WORLD IN ONE DAY", a "THE DAY IN UTC" timeline, three big
+ * scene-illustrated leads (COP31 runs into overtime, Iran strikes Bahrain,
+ * Peru quake), ten medium stories with real full-width scene illustration
+ * bands and visible source strips, a light world map with 11 numbered pins
+ * and ocean labels, an "Also on Saturday" list of 22 more stories, a DATE
+ * CHECK box and a sources footer. Every fact comes only from sources dated
  * 21 November 2026 (outlets recorded per story in the build notes; the
  * per-story source file is not part of the repo).
  *
@@ -74,11 +74,11 @@ function main(): void {
   writeFileSync(target, bytes);
 
   // One line on stdout so a run's result is visible in the grader log.
-  // The bundled picture is the 38-story front page for Saturday
+  // The bundled picture is the 35-story front page for Saturday
   // 21 November 2026 (COP31 overtime lead #01 with a globe and
-  // thermometer scene, Riyadh intercepts and Kryvyi Rih leads,
-  // illustrated mediums, navy map — all 38 stories verified from
-  // 21 November 2026 sources only).
+  // thermometer scene, Bahrain strikes and Peru quake leads, illustrated
+  // mediums, light map — all 35 stories verified from 21 November 2026
+  // sources only).
   const digest = createHash("sha256").update(bytes).digest("hex").slice(0, 16);
   console.log(`Wrote ${target} (${bytes.length} bytes, ${width}x${height}, sha256 ${digest}…)`);
 }
