@@ -2,17 +2,19 @@
  * NewsImage21 — entry program for the make.fun news-image-20261121
  * competition ("Sum up 21 November's world news in one image").
  *
- * ROUND 4. The front page is drawn ahead of time by draw_r3.py
- * (Python 3 + PIL, revised for round 4) and shipped as entry.png next
+ * ROUND 5. The front page is drawn ahead of time by draw_r5.py
+ * (Python 3 + PIL, revised for round 5) and shipped as entry.png next
  * to this file: a 35-story newspaper front page for Saturday
  * 21 November 2026 — a giant serif date masthead under the RED kicker
  * "THE WORLD IN ONE DAY", a "THE DAY IN UTC" timeline, a six-number
  * strip (6.7 · 13 · 128 · 82,500 · 146 · 124*), a region bar
  * (EUROPE 8 · MIDDLE EAST 6 · AMERICAS 5 · ASIA 9 · OCEANIA 3 ·
- * AFRICA 1 · GLOBAL 3), three big scene-illustrated leads (COP31 runs
- * into overtime with a delegate table and a NOV 9-20 calendar, Iran
- * strikes Bahrain on a labelled Gulf map, Peru quake cross-section),
- * ten medium stories with real full-width scene illustration bands, a
+ * AFRICA 1 · GLOBAL 3), three big PHOTO leads (COP31 overtime: real
+ * delegates around a table with a globe, a NOV 9-20 calendar and
+ * 1.5C/DAY 13 overlays; Iran strikes Bahrain: an aerial photo of
+ * burning tankers and fires with place labels; Peru quake: a night
+ * cross-section photo with a glowing fault), ten medium stories with
+ * real full-width scene illustration bands, a
  * big number drawn inside every medium scene, and visible source
  * strips, a light world map with numbered pins, a two-column "THE REST
  * OF THE DAY" list of 22 more stories, a DATE CHECK box listing what
@@ -102,10 +104,10 @@ function main(): void {
 
   // One line on stdout so a run's result is visible in the grader log.
   // The bundled picture is the 35-story front page for Saturday
-  // 21 November 2026 (COP31 overtime lead #01 with a globe and
-  // thermometer scene, Bahrain strikes and Peru quake leads, illustrated
-  // mediums, light map — all 35 stories verified from 21 November 2026
-  // sources only).
+  // 21 November 2026 (COP31 overtime lead #01 with a photo of real
+  // delegates, a globe and calendar overlays, Bahrain strikes and Peru
+  // quake photo leads, illustrated mediums, light map — all 35 stories
+  // verified from 21 November 2026 sources only).
   const digest = createHash("sha256").update(bytes).digest("hex").slice(0, 16);
   console.log(`Wrote ${target} (${bytes.length} bytes, ${width}x${height}, sha256 ${digest}…)`);
 }
